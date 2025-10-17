@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brandon Uriel Garcia Sanchez - Portafolio</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<!-- Tailwind CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          'dark-bg': '#0D1B2A',
+          'accent-blue': '#0EA5E9',
+          'text-gray': '#E5E7EB',
+          'glass-border': 'rgba(14, 165, 233, 0.3)',
+        },
+        fontFamily: { poppins: ['Poppins', 'sans-serif'] }
+      }
+    }
+  }
+</script>
+
+<!-- AOS for scroll animations -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<style>
+  body { background-color: #0D1B2A; color: #E5E7EB; }
+  .glass { background: rgba(255,255,255,0.03); backdrop-filter: blur(6px); border: 1px solid rgba(255,255,255,0.05); }
+  .hover-card:hover { transform: translateY(-5px) scale(1.05); box-shadow: 0 10px 20px rgba(0,0,0,0.4); transition: all 0.3s ease; }
+  .tag-hover:hover { background-color: #0B78C6; transform: scale(1.05); transition: all 0.3s ease; }
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+</style>
+</head>
+<body class="font-poppins antialiased">
+
+<div class="min-h-screen flex flex-col">
+
+  <!-- Header -->
+  <header class="w-full py-6 px-6 flex items-center justify-between border-b border-white/5">
+    <div class="flex items-center gap-4">
+      <div class="w-10 h-10 rounded-full bg-accent-blue flex items-center justify-center text-white font-bold">BU</div>
+      <div>
+        <div class="text-sm text-gray-400">Brandon Uriel Garcia Sanchez</div>
+        <div class="text-xs text-gray-500">Especialista en Análisis Financiero y Modelado Predictivo para Banca y Negocios</div>
+      </div>
+    </div>
+    <nav class="flex items-center gap-3">
+      <a href="https://github.com/CatoXP" class="px-3 py-2 rounded-md glass hover:scale-105 transition">GitHub</a>
+      <a href="https://linkedin.com/in/brandon-uriel-9ab77b320" class="px-3 py-2 rounded-md glass hover:scale-105 transition">LinkedIn</a>
+      <a href="mailto:garciasanchezbrandonu@gmail.com" class="px-3 py-2 rounded-md glass hover:scale-105 transition">Correo</a>
+    </nav>
+  </header>
+
+  <main class="flex-1 container mx-auto px-6 py-12 space-y-16">
+
+    <!-- Hero con imagen -->
+    <section class="flex flex-col items-center md:items-start gap-6" data-aos="fade-down" data-aos-duration="700">
+      <img src="ia.png" alt="Brandon Uriel Garcia Sanchez" class="w-64 md:w-72 rounded-full">
+      <h1 class="text-4xl md:text-5xl font-bold leading-tight text-white">Brandon Uriel Garcia Sanchez</h1>
+      <p class="mt-4 text-accent-blue font-semibold text-xl text-center md:text-left">
+        Científico de Datos | Análisis Financiero
+      </p>
+      <p class="mt-4 text-gray-400 max-w-xl text-center md:text-left text-lg">
+        Licenciado en Ciencias de Datos para Negocios, apasionado por el análisis financiero y modelado predictivo.  
+      </p>
+    </section>
+
+    <!-- Sobre mí -->
+    <section id="sobre-mi" class="space-y-4 mt-12" data-aos="fade-up" data-aos-duration="700">
+      <h2 class="text-2xl font-semibold text-white">Sobre mí</h2>
+      <p class="text-gray-400 max-w-3xl">
+        Apasionado por el análisis financiero y bancario. Transformo grandes volúmenes de datos en insights accionables que apoyan decisiones estratégicas.  
+        Con conocimientos en limpieza y procesamiento de datos, visualización y modelado predictivo.
+        Me especializo en dashboards interactivos y análisis de riesgos que me permiten identificar oportunidades y optimizar resultados.
+      </p>
+    </section>
+
+    <!-- Experiencia -->
+    <section id="experiencia" class="space-y-8 mt-12" data-aos="fade-up" data-aos-duration="700">
+      <h2 class="text-2xl font-semibold text-white">Experiencia</h2>
+      <div class="grid grid-cols-1 gap-6 mt-6">
+        <div class="p-6 rounded-xl shadow-lg glass hover-card border border-glass-border">
+          <h3 class="font-semibold text-white text-lg">Database Manager | MAXI Empresa</h3>
+          <p class="text-gray-300 text-sm mt-1">SEP 2022 – OCT 2024</p>
+          <ul class="text-gray-300 mt-3 list-disc list-inside space-y-1 text-sm">
+            <li>Gestioné bases de datos SQL para mantener integridad y disponibilidad de información crítica.</li>
+            <li>Analicé datos y generé reportes detallados para la toma de decisiones estratégicas.</li>
+            <li>Implementé sistemas de control y optimización de inventarios, mejorando la eficiencia operativa.</li>
+            <li>Automatización de reportes y dashboards que permitieron un seguimiento preciso de KPIs financieros.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="habilidades" class="space-y-4 mt-12" data-aos="fade-up" data-aos-duration="700">
+      <h2 class="text-2xl font-semibold text-white">Habilidades</h2>
+      <p class="text-sm text-gray-400 max-w-2xl">Lenguajes, herramientas y técnicas — enfocadas en banca y análisis financiero.</p>
+      <div class="mt-4 flex flex-wrap gap-3">
+        <span class="px-4 py-2 rounded-full bg-accent-blue text-white text-sm font-semibold tag-hover">Python</span>
+        <span class="px-4 py-2 rounded-full bg-accent-blue text-white text-sm font-semibold tag-hover">SQL</span>
+        <span class="px-4 py-2 rounded-full bg-accent-blue text-white text-sm font-semibold tag-hover">Power BI</span>
+        <span class="px-4 py-2 rounded-full bg-accent-blue text-white text-sm font-semibold tag-hover">Excel</span>
+        <span class="px-4 py-2 rounded-full bg-accent-blue text-white text-sm font-semibold tag-hover">Pandas / NumPy</span>
+        <span class="px-4 py-2 rounded-full bg-accent-blue text-white text-sm font-semibold tag-hover">Scikit-learn</span>
+        <span class="px-4 py-2 rounded-full bg-accent-blue text-white text-sm font-semibold tag-hover">Machine Learning</span>
+        <span class="px-4 py-2 rounded-full bg-accent-blue text-white text-sm font-semibold tag-hover">Visualización de datos</span>
+        <span class="px-4 py-2 rounded-full bg-accent-blue text-white text-sm font-semibold tag-hover">Modelado predictivo</span>
+        <span class="px-4 py-2 rounded-full bg-accent-blue text-white text-sm font-semibold tag-hover">R / R Studio</span>
+      </div>
+    </section>
+
+    <!-- Educación -->
+    <section id="educacion" class="space-y-6 mt-12" data-aos="fade-up" data-aos-duration="700">
+      <h2 class="text-2xl font-semibold text-white mb-4">Educación</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="glass p-6 rounded-xl hover-card border border-glass-border">
+          <h3 class="font-semibold text-white text-lg">Licenciatura en Ciencias de Datos para Negocios</h3>
+          <p class="text-gray-300 mt-1">Universidad Nacional Rosario Castellanos • AGO 2024 - JUL 2028</p>
+        </div>
+        <div class="glass p-6 rounded-xl hover-card border border-glass-border">
+          <h3 class="font-semibold text-white text-lg">Carrera Técnica CETIS 3</h3>
+          <p class="text-gray-300 mt-1">Python, Java, HTML/CSS, SQL, C#, Visual Basic, C++ • NOV 2019 - JUL 2022</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certificaciones -->
+    <section id="certificaciones" class="space-y-6 mt-12" data-aos="fade-up" data-aos-duration="700">
+      <h2 class="text-2xl font-semibold text-white mb-4">Certificaciones</h2>
+      <div class="overflow-x-auto py-4 no-scrollbar">
+        <div class="flex gap-6 w-max">
+          <div class="glass p-4 rounded-xl border border-glass-border min-w-[300px] flex-shrink-0 flex flex-col items-center justify-center cursor-pointer transform transition hover:scale-105" onclick="openModal('1.png')">
+            <img src="1.png" alt="Certificado 1" class="w-72 h-72 object-contain mb-2">
+            <p class="text-gray-300 text-center text-sm">Fundamentos de Python I - Cisco</p>
+          </div>
+          <div class="glass p-4 rounded-xl border border-glass-border min-w-[300px] flex-shrink-0 flex flex-col items-center justify-center cursor-pointer transform transition hover:scale-105" onclick="openModal('2.png')">
+            <img src="2.png" alt="Certificado 2" class="w-72 h-72 object-contain mb-2">
+            <p class="text-gray-300 text-center text-sm">Introducción a la Ciencia de Datos - Santander</p>
+          </div>
+          <div class="glass p-4 rounded-xl border border-glass-border min-w-[300px] flex-shrink-0 flex flex-col items-center justify-center cursor-pointer transform transition hover:scale-105" onclick="openModal('3.png')">
+            <img src="3.png" alt="Certificado 3" class="w-72 h-72 object-contain mb-2">
+            <p class="text-gray-300 text-center text-sm">Python para Ciencias de Datos - A2</p>
+          </div>
+          <div class="glass p-4 rounded-xl border border-glass-border min-w-[300px] flex-shrink-0 flex flex-col items-center justify-center cursor-pointer transform transition hover:scale-105" onclick="openModal('4.png')">
+            <img src="4.png" alt="Certificado 4" class="w-72 h-72 object-contain mb-2">
+            <p class="text-gray-300 text-center text-sm">Analista de Datos - DS4B</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal / Lightbox -->
+    <div id="modal" class="fixed inset-0 bg-black bg-opacity-80 hidden items-center justify-center z-50">
+      <span class="absolute top-4 right-6 text-white text-3xl cursor-pointer" onclick="closeModal()">&times;</span>
+      <div class="flex items-center justify-center w-full h-full">
+        <img id="modal-img" src="" alt="Certificado" class="max-h-[90%] max-w-[90%] rounded-lg shadow-lg object-contain">
+      </div>
+    </div>
+
+    <script>
+      function openModal(src) {
+        const modal = document.getElementById('modal');
+        const modalImg = document.getElementById('modal-img');
+        modal.classList.remove('hidden');
+        modalImg.src = src;
+      }
+
+      function closeModal() {
+        document.getElementById('modal').classList.add('hidden');
+      }
+    </script>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="space-y-4 mt-12" data-aos="fade-up" data-aos-duration="700">
+      <h2 class="text-2xl font-semibold text-white">Proyectos</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+        <div class="glass p-6 rounded-xl border border-glass-border h-64 flex items-center justify-center text-gray-400 text-center transform transition hover:scale-105">
+          Proyecto 1
+        </div>
+        <div class="glass p-6 rounded-xl border border-glass-border h-64 flex items-center justify-center text-gray-400 text-center transform transition hover:scale-105">
+          Proyecto 2
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="space-y-4 mt-12" data-aos="fade-up" data-aos-duration="700">
+      <h2 class="text-2xl font-semibold text-white">Contacto</h2>
+      <div class="flex items-center gap-4">
+        <img src="telefono.png" alt="Teléfono" class="w-12 h-12">
+        <p class="text-gray-400 max-w-2xl">
+          Disponible para oportunidades en banca y análisis financiero.  
+          <br>Tel: (+52) 55-36-73-14-32
+        </p>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
